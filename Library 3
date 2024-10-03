@@ -1,0 +1,52 @@
+/*
+author: Nancy moraa Kebaso 
+reg no:CT101/G/23248/24
+*/
+#include<stdio.h>
+int main()
+{
+   int book_id, due_date, return_date,fine_rate;
+   //program for integer 
+   //required to enter book_id
+   printf("enter book_id \n");
+   scanf("%f", & book_id);
+   //required to enter due_date
+   printf("enter due_date \n");
+   scanf("%f", &due_date);
+   //required to enter return_date
+   printf("enter return_date \n");
+   scanf("%f", & return_date);
+   //calculating the days overdue 
+   //required to enter returnDate
+   printf("enter return_date:\n");
+   scanf("%d", &return_date);
+   
+   //required to enter the dueDate 
+   printf("enter due_date:\n");
+   scanf("%d", due_date);
+   
+   int due_days=return_date-due_date;
+   printf("the due_days is:.%2lf \n");
+   
+   if(due_days<=7){
+   fine_rate=20;
+   }if(due_days<=14){
+   fine_rate=50;
+   }else{
+   fine_rate=100;
+   }
+   //fine amount is
+   int fine_amount=due_days*fine_rate;
+   //program to display 
+   printf("enter book_id \n");
+   printf("enter the due_date \n");
+   printf("enter the return_date \n");
+   printf("enter the days_overdue \n");
+   printf("enter the fine_rate \n");
+   printf("enter fine_amount \n");
+   
+   return 0;
+   }
+   
+
+
